@@ -5,3 +5,10 @@
     .panel-body h3 {
     margin-top: 0;
     }
+
+    .container {
+        border: 1px solid; 
+        border-radius: 6px; 
+        width:1000px; height:450px; 
+        background-color: white;
+    }
