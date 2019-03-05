@@ -4,24 +4,21 @@
             <a class="navbar-brand">Security</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="http://localhost:3000">Home</a></li>
+            <li><a>Home</a></li>
             <li><a *ngIf="!auth.isAuthenticated()" (click)="auth.login()">Login</a></li>
             <li><a *ngIf="auth.isAuthenticated()" (click)="auth.logout()">Logout</a></li>
-            <li><a *ngIf="auth.isAuthenticated()" href="http://localhost:3000/profile">Profile</a></li>
         </ul>
     </div>
 </nav>
 <br/>
 <br/>
-<h3 class="center">Security Karen Tibo</h3>
+<h1 class="center">Security Karen Tibo</h1>
   <main role="main" class="center">
     <router-outlet></router-outlet>
   </main>
 <br/>
 <div class="center">
-<iframe sandbox='allow-scripts' *ngIf="auth.isAuthenticated()" class="container" src="http://localhost:3000/profile">
-
-</iframe> 
+<iframe sandbox='allow-scripts' *ngIf="auth.isAuthenticated()" class="container" src="learning.ap.be/login/index.php"></iframe> 
 </div>
 
 
