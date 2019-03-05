@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { AUTH_CONFIG } from './auth0-variables';
 import { Router } from '@angular/router';
 import * as auth0 from 'auth0-js';
 
@@ -9,12 +8,15 @@ export class AuthService {
   private _idToken: string;
   private _accessToken: string;
   private _expiresAt: number;
+  userProfile: any;
 
   auth0 = new auth0.WebAuth({
-    clientID: AUTH_CONFIG.clientID,
-    domain: AUTH_CONFIG.domain,
+    clientID: 'KJwgp9nijauTpsdYx67wVM0UcNqzKR9b',
+    domain: 'karentibo.eu.auth0.com',
     responseType: 'token id_token',
-    redirectUri: AUTH_CONFIG.callbackURL
+    redirectUri: 'http://localhost:3000/callback', //PROD:'https://opdrachtsecurityspa.azurewebsites.net/callback',
+    scope: 'openid profile apnames.read',
+    audience: 'https://securitykt.azurewebsites.net/api',
   });
 
   constructor(public router: Router) {
@@ -38,12 +40,12 @@ export class AuthService {
   public handleAuthentication(): void {
     this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
+        window.location.hash = '';
         this.localLogin(authResult);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/profile']);
       } else if (err) {
         this.router.navigate(['/home']);
         console.log(err);
-        alert(`Error: ${err.error}. Check the console for further details.`);
       }
     });
   }
@@ -60,12 +62,12 @@ export class AuthService {
 
   public renewTokens(): void {
     this.auth0.checkSession({}, (err, authResult) => {
-       if (authResult && authResult.accessToken && authResult.idToken) {
-         this.localLogin(authResult);
-       } else if (err) {
-         alert(`Could not get a new token (${err.error}: ${err.error_description}).`);
-         this.logout();
-       }
+      if (authResult && authResult.accessToken && authResult.idToken) {
+        this.localLogin(authResult);
+      } else if (err) {
+        alert(`Could not get a new token (${err.error}: ${err.error_description}).`);
+        this.logout();
+      }
     });
   }
 
@@ -86,4 +88,17 @@ export class AuthService {
     return new Date().getTime() < this._expiresAt;
   }
 
+  public getProfile(cb): void {
+    if (!this._accessToken) {
+      throw new Error('Access Token must exist to fetch profile');
+    }
+
+    this.auth0.client.userInfo(this._accessToken, (err, profile) => {
+      if (profile) {
+        this.userProfile = profile;
+        console.log(this.userProfile);
+      }
+      cb(err, profile);
+    });
+  }
 }

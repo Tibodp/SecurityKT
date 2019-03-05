@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src  http://karentibo.eu.auth0.com/; img-src 'self'; script-src 'self' https://code.jquery.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; 
-    connect-src http://localhost:3000 ws://localhost:3000 https://karentibo.eu.auth0.com/.well-known/jwks.json; 
+  <meta http-equiv="Content-Security-Policy" content="default-src  http://karentibo.eu.auth0.com/; img-src 'self' https://lh6.googleusercontent.com; script-src 'self' https://code.jquery.com 'unsafe-eval' 
+  http://localhost:3000/runtime.js http://localhost:3000/polyfills.js http://localhost:3000/styles.js http://localhost:3000/vendor.js http://localhost:3000/main.js ; style-src 'self' 'unsafe-inline'; 
+    connect-src http://localhost:3000 ws://localhost:3000 https://karentibo.eu.auth0.com/.well-known/jwks.json https://karentibo.eu.auth0.com/userinfo; child-src http://localhost:3000/profile https://karentibo.eu.auth0.com ;
     font-src http://localhost:3000/glyphicons-halflings-regular.woff2 http://localhost:3000/glyphicons-halflings-regular.woff http://localhost:3000/glyphicons-halflings-regular.ttf http://localhost:3000/glyphicons-halflings-regular.svg">
   <title>Centralized Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
