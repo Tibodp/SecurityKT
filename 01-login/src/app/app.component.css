@@ -1,0 +1,10 @@
+.center {
+    text-align: center;
+}
+.container {
+    border: 1px solid; 
+    border-radius: 6px; 
+    width:500px; height:200px; 
+    box-shadow: 0 1px 6px, 0 1px 12px darkcyan; 
+    background-color: white;
+}
