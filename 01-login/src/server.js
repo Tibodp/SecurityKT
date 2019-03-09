@@ -42,14 +42,3 @@ const port = 3000;
 const server = app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);  
 });
-
-//test
-//var options = { method: 'GET',
-  //url: 'http://path_to_your_api/',
-  //headers: { authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlJFRkJPVVJHUXpBeE0wUXhNek14T1VJek1ESkZSVEJHUmtWRE4wUkZRelF3T1VWRlF6azFOUSJ9.eyJpc3MiOiJodHRwczovL2thcmVudGliby5ldS5hdXRoMC5jb20vIiwic3ViIjoibXpuVVJ4cGVMaDN4STFBeHFaaUlhMTBGdTJ5Y1RTWjhAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vc2VjdXJpdHlrdC5henVyZXdlYnNpdGVzLm5ldC9hcGkiLCJpYXQiOjE1NTE3ODIwMTksImV4cCI6MTU1MTg2ODQxOSwiYXpwIjoibXpuVVJ4cGVMaDN4STFBeHFaaUlhMTBGdTJ5Y1RTWjgiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.HV851LYgSQ7o93eNiluerovMCbrH3_zofOIDniROiVVBmzzqTX0KO2U5eqVQoilVPvv-Wapj3c5m3pnP1ZgngiZh84lP-oXIpWElxAukD7ZDmMAN66FmRwJBoK1ZW_0RR6w7WnXTlHolgmWelrymBpKa55HYFyDih_XNlhhZqnLZR2fC3PVPCQBEh0HXen0X-I1EC0DkcFtsnNbWfrpsBtTHQJhJHDrMGK-b97ymL1TWhuTAiXLm8j3nQ7Y8_GiFiO4onJbB09hC5kboAUBphswrCA8WSHJhNpnXUXOPgthH279jsLxis8lDjr3CcTfSia8uK_hJtTEhkNC3uE8Y3A' } };
-
-//request(options, function (error, response, body) {
-  //if (error) throw new Error(error);
-
-  //console.log(body);
-//});
