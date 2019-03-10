@@ -60,5 +60,8 @@
     "tslint": "~5.7.0",
     "typescript": "3.1.6",
     "webpack": "^4.29.6"
-  }
+  },
+  "description": "This sample demonstrates how to add authentication to an Angular application using Auth0's Lock widget from the hosted login page. The sample uses the Angular CLI.",
+  "main": "karma.conf.js",
+  "author": ""
 }
