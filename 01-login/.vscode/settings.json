@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3d97667c-9fc3-44f1-8105-a293428173db/resourceGroups/SecurityKT/providers/Microsoft.Web/sites/SecurityKT",
+    "appService.deploySubpath": "dist"
+}

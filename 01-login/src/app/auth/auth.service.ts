@@ -14,7 +14,7 @@ export class AuthService {
     clientID: 'KJwgp9nijauTpsdYx67wVM0UcNqzKR9b',
     domain: 'karentibo.eu.auth0.com',
     responseType: 'token id_token',
-    redirectUri: 'http://localhost:3000/callback', //PROD:'https://opdrachtsecurityspa.azurewebsites.net/callback',
+    redirectUri: 'https://securitykt.azurewebsites.net/callback',
     scope: 'openid profile apnames.read',
     audience: 'https://securitykt.azurewebsites.net/api',
   });
