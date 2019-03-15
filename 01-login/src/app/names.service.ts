@@ -16,10 +16,14 @@ export class NamesService {
   };
 
   getPrivate():Observable<string>{
-    return this.http.get<string>("https://securitycmapi.azurewebsites.net/api/values/private", this.httpOptions);
+    return this.http.get<string>("https://securityktapi.azurewebsites.net/api/private", this.httpOptions);
   }
 
   getScoped():Observable<string>{
-    return this.http.get<string>("https://securitycmapi.azurewebsites.net/api/values", this.httpOptions);
+    return this.http.get<string>("https://securityktapi.azurewebsites.net/api/private-scoped", this.httpOptions);
+  }
+
+  getPublic():Observable<string>{
+    return this.http.get<string>("https://securityktapi.azurewebsites.net/api/public");
   }
 }

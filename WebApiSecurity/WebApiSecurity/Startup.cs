@@ -45,7 +45,7 @@ namespace WebApiSecurity
                     });
             });
 
-            string domain = $"https://{Configuration["Auth0:Domain"]}/";
+            string domain = "https://karentibo.eu.auth0.com";
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -54,7 +54,7 @@ namespace WebApiSecurity
             }).AddJwtBearer(options =>
             {
                 options.Authority = domain;
-                options.Audience = Configuration["Auth0:ApiIdentifier"];
+                options.Audience = "https://securityktapi.azurewebsites.net";
             });
 
             services.AddAuthorization(options =>

@@ -22,17 +22,27 @@ export class NamesComponent implements OnInit {
     if (this.auth.isAuthenticated()) {
       this.namesService.getPrivate().subscribe(data => {
         this.names = data;
-        console.log(this.auth.accessToken);
-        
+        console.log(data); 
       })
     }
   }
 
-   getScoped() { 
+   getPublic() { 
    if (this.auth.isAuthenticated()) {
-      this.namesService.getScoped().subscribe(data => {
+      this.namesService.getPublic().subscribe(data => {
         this.names = data;
         console.log(data);
        })
     }
-  }}
+  }
+
+  getScoped() { 
+    if (this.auth.isAuthenticated()) {
+       this.namesService.getScoped().subscribe(data => {
+         this.names = data;
+         console.log(data);
+        })
+     }
+   }
+
+}

@@ -7,23 +7,24 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApiSecurity.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
         // GET api/values
+        [Route("public")]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Public()
         {
             return new string[] { "Webiste gemaakt door Karen Veraa & Tibo Depovere" };
         }
-
-        [HttpGet]
+   
         [Route("private")]
+        [HttpGet]
         [Authorize]
         public ActionResult<IEnumerable<string>> Private()
         {
-            return new string[] { "Karen Veraa & Tibo Depovere" };
+            return new string[] { "Webiste gemaakt door Karen Veraa & Tibo Depovere" };
         }
 
         [HttpGet]
@@ -32,31 +33,6 @@ namespace WebApiSecurity.Controllers
         public ActionResult<IEnumerable<string>> Scoped()
         {
             return new string[] { "Karen Veraa & Tibo Depovere" };
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

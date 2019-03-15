@@ -1,12 +1,6 @@
 <!-- **Student code change starts** -->
-<div class="container">
-        <div class="panel panel-default profile-area">
-           <div class="panel-heading">
-           <div class="panel-body">
-             <div>
-               <p>{{ names }}</p>
-             </div>
-           </div>
-         </div>
-       </div>
-       <!-- **Student code change ends** -->
+<p class="btn" *ngIf="auth.isAuthenticated()">
+  <br>
+    {{names}}
+</p>
+<!-- **Student code change ends** -->
