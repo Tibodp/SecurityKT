@@ -1,3 +1,4 @@
+// **Student code change starts**
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './../auth/auth.service';
 
@@ -23,3 +24,4 @@ export class ProfileComponent implements OnInit {
   }
 
 }
+// **Student code change ends**

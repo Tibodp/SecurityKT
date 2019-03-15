@@ -8,6 +8,7 @@ export class AuthService {
   private _idToken: string;
   private _accessToken: string;
   private _expiresAt: number;
+  // **Student code change starts** 
   userProfile: any;
 
   auth0 = new auth0.WebAuth({
@@ -18,6 +19,7 @@ export class AuthService {
     scope: 'openid profile apnames.read',
     audience: 'https://securitykt.azurewebsites.net/api',
   });
+  // **Student code change ends**
 
   constructor(public router: Router) {
     this._idToken = '';
@@ -87,7 +89,7 @@ export class AuthService {
     // access token's expiry time
     return new Date().getTime() < this._expiresAt;
   }
-
+// **Student code change starts**
   public getProfile(cb): void {
     if (!this._accessToken) {
       throw new Error('Access Token must exist to fetch profile');
@@ -102,3 +104,4 @@ export class AuthService {
     });
   }
 }
+// **Student code change ends** 
