@@ -1,0 +1,14 @@
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\bin\Release\netcoreapp2.1\WebApiSecurity.deps.json
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\bin\Release\netcoreapp2.1\WebApiSecurity.runtimeconfig.json
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\bin\Release\netcoreapp2.1\WebApiSecurity.runtimeconfig.dev.json
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\bin\Release\netcoreapp2.1\WebApiSecurity.dll
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\bin\Release\netcoreapp2.1\WebApiSecurity.pdb
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.csprojResolveAssemblyReference.cache
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.csproj.CoreCompileInputs.cache
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.RazorAssemblyInfo.cache
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.RazorAssemblyInfo.cs
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.AssemblyInfoInputs.cache
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.AssemblyInfo.cs
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.RazorTargetAssemblyInfo.cache
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.dll
+C:\Users\karen\Downloads\SecurityKT-masterPull\SecurityKT-master\WebApiSecurity\WebApiSecurity\obj\Release\netcoreapp2.1\WebApiSecurity.pdb

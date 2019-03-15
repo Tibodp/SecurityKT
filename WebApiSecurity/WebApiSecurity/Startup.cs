@@ -45,7 +45,7 @@ namespace WebApiSecurity
                     });
             });
 
-            string domain = "https://karentibo.eu.auth0.com";
+            string domain = "https://karentibo.eu.auth0.com/";
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

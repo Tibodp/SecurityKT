@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "b2bb19a46baa2e9df5b1fbacd8e7e4be3578a18b"
+    "signature": "1bbe457f78885fe5bc0671d4c540da1962d142e1"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "JWT": "5.0.1",
           "Microsoft.AspNetCore.App": "2.1.1",
+          "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0"
         },
         "runtime": {
@@ -53,6 +54,7 @@
           "lib/netstandard1.3/JWT.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
       "Microsoft.NETCore.App/2.1.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.1.0",
@@ -353,6 +355,7 @@
           "Microsoft.AspNetCore.NodeServices": "2.1.1",
           "Microsoft.AspNetCore.Owin": "2.1.1",
           "Microsoft.AspNetCore.Razor": "2.1.1",
+          "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.AspNetCore.Razor.Language": "2.1.1",
           "Microsoft.AspNetCore.Razor.Runtime": "2.1.1",
           "Microsoft.AspNetCore.ResponseCaching": "2.1.1",
@@ -938,6 +941,7 @@
           "Microsoft.AspNetCore.Mvc.RazorPages": "2.1.1",
           "Microsoft.AspNetCore.Mvc.TagHelpers": "2.1.1",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.1",
+          "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
           "Microsoft.Extensions.DependencyInjection": "2.1.1"
         },
@@ -3182,6 +3186,13 @@
       "sha512": "sha512-0rDXizf96UrvR15jNwWgkM91JHgZ8SZnGDQIDzGw7c4rfdwcLvp0ZLXLTwIxwij7ywV+Ufb5iHPpyB5Na1n6SQ==",
       "path": "jwt/5.0.1",
       "hashPath": "jwt.5.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Razor.Design/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BclSBrm1mZzG1mjYG3Fm60ObVFa+DTKUkE0pZrg1nq7vJ/4whuLLQ3vk4ZsPAUbLyz4XiEyYNIMO1K/1Au+OLQ==",
+      "path": "microsoft.aspnetcore.razor.design/2.1.2",
+      "hashPath": "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",
