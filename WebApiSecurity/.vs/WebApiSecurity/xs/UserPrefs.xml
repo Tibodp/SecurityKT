@@ -1,15 +1,20 @@
 ﻿<Properties StartupConfiguration="{CA06425B-FDC6-4554-8AA8-D12EC2E62329}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiSecurity/Controllers/ValuesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiSecurity/Startup.cs">
     <Files>
-      <File FileName="WebApiSecurity/appsettings.json" Line="12" Column="44" />
-      <File FileName="WebApiSecurity/Startup.cs" Line="48" Column="73" />
-      <File FileName="WebApiSecurity/Controllers/ValuesController.cs" Line="25" Column="10" />
+      <File FileName="WebApiSecurity/appsettings.json" Line="12" Column="23" />
+      <File FileName="WebApiSecurity/Startup.cs" Line="57" Column="76" />
+      <File FileName="WebApiSecurity/Controllers/ValuesController.cs" Line="30" Column="7" />
+      <File FileName="WebApiSecurity/HasScopeHandler.cs" Line="12" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/tibodepovere/Documents/GitHub/Security/WebApiSecurity/WebApiSecurity/Controllers/ValuesController.cs" relfile="WebApiSecurity/Controllers/ValuesController.cs" line="25" column="1" />
+      <Breakpoint file="/Users/tibodepovere/Documents/GitHub/Security/WebApiSecurity/WebApiSecurity/Controllers/ValuesController.cs" relfile="WebApiSecurity/Controllers/ValuesController.cs" line="17" column="1" />
+      <Breakpoint file="/Users/tibodepovere/Documents/GitHub/Security/WebApiSecurity/WebApiSecurity/Controllers/ValuesController.cs" relfile="WebApiSecurity/Controllers/ValuesController.cs" line="33" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.WebApiSecurity PreferredExecutionTarget="MonoDevelop.Default" />

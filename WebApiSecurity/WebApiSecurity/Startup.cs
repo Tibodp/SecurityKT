@@ -38,7 +38,7 @@ namespace WebApiSecurity
                     builder =>
                     {
                         builder
-                        .WithOrigins("https://securityktapi.azurewebsites.net")
+                        .WithOrigins("*")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials();
