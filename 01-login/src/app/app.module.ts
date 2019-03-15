@@ -12,7 +12,8 @@ import { ROUTES } from './app.routes';
 import { AuthService } from './auth/auth.service';
 import { CallbackComponent } from './callback/callback.component';
 // **Student code change starts**
-import { ProfileComponent } from './profile/profile.component';
+import { NamesComponent } from "./names/names.component";
+import { NamesService } from "./names.service";
 // **Student code change ends**
 
 @NgModule({
@@ -21,7 +22,7 @@ import { ProfileComponent } from './profile/profile.component';
     HomeComponent,
     CallbackComponent,
     // **Student code change starts**
-    ProfileComponent
+    NamesComponent
     // **Student code change ends**
   ],
   imports: [
@@ -30,7 +31,7 @@ import { ProfileComponent } from './profile/profile.component';
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [AuthService],
+  providers: [AuthService, NamesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

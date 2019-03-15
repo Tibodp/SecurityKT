@@ -1,10 +1,19 @@
 ﻿using System;
+using Microsoft.AspNetCore.Authorization;
+
 namespace WebApiSecurity
 {
-    public class HasScopeRequirement
+    //student code change start
+    public class HasScopeRequirement : IAuthorizationRequirement
     {
-        public HasScopeRequirement()
+        public string Issuer { get; }
+        public string Scope { get; }
+
+        public HasScopeRequirement(string scope, string issuer)
         {
+            Scope = scope ?? throw new ArgumentNullException(nameof(scope));
+            Issuer = issuer ?? throw new ArgumentNullException(nameof(issuer));
         }
     }
+    //student code change end
 }

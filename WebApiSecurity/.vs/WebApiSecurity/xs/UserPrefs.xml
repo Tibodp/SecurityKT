@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{CA06425B-FDC6-4554-8AA8-D12EC2E62329}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiSecurity/Controllers/ValuesController.cs">
+    <Files>
+      <File FileName="WebApiSecurity/Controllers/ValuesController.cs" Line="8" Column="37" />
+      <File FileName="WebApiSecurity/appsettings.json" Line="12" Column="44" />
+      <File FileName="WebApiSecurity/HasScopeHandler.cs" Line="5" Column="25" />
+      <File FileName="WebApiSecurity/HasScopeRequirement.cs" Line="4" Column="25" />
+      <File FileName="WebApiSecurity/Startup.cs" Line="16" Column="25" />
+      <File FileName="WebApiSecurity/Program.cs" Line="11" Column="25" />
+      <File FileName="WebApiSecurity/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="WebApiSecurity/Properties/launchSettings.json" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebApiSecurity PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

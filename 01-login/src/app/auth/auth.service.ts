@@ -16,8 +16,8 @@ export class AuthService {
     domain: 'karentibo.eu.auth0.com',
     responseType: 'token id_token',
     redirectUri: 'https://securitykt.azurewebsites.net/callback',
-    scope: 'openid profile apnames.read',
-    audience: 'https://securitykt.azurewebsites.net/api',
+    scope: 'openid profile read:names',
+    audience: 'https://securityktapi.azurewebsites.net',
   });
   // **Student code change ends**
 
@@ -44,7 +44,7 @@ export class AuthService {
       if (authResult && authResult.accessToken && authResult.idToken) {
         window.location.hash = '';
         this.localLogin(authResult);
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/home']);
       } else if (err) {
         this.router.navigate(['/home']);
         console.log(err);
